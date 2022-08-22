@@ -6,10 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Microsoft - Cloud, Computers, Apps Gaming (Clone)</title>
+    <script>
+
+        function hideShowAllMicrosoft() {
+            var allMicrosoft = document.getElementById("allMicrosoft");
+            if (allMicrosoft.style.display == "none") {
+                allMicrosoft.style.display = "block";
+            } else {
+                allMicrosoft.style.display = "none";
+            }
+        }
+
+    </script>
 </head>
 
-<body>
+<body id="container">
     <div class="container mx-auto">
         <div class="navbar flex justify-between items-centers xl:mr-20 xl:ml-20 md:mr-20 md:ml-20">
             <div class="flex justify-center items-center md:order-2">
@@ -25,21 +38,122 @@
                 </div>
                 <div class="feature-menu absolute w-fit md:static md:w-auto bg-gray-200 md:bg-white inset-0 md:flex 
             md:mx-4 md:space-x-2 -translate-x-96 md:translate-x-0 mt-4 space-x-30">
-                    <div class="feature-menu-item hover:underline hover:underline-offset-8 cursor-pointer text-[15px] mr-[15px!important]">Microsoft 365</div>
-                    <div class="feature-menu-item hover:underline hover:underline-offset-8 cursor-pointer text-[15px] mr-[15px!important]">Office</div>
-                    <div class="feature-menu-item hover:underline hover:underline-offset-8 cursor-pointer text-[15px] mr-[15px!important]">Windows</div>
-                    <div class="feature-menu-item hover:underline hover:underline-offset-8 cursor-pointer text-[15px] mr-[15px!important]">Surface</div>
-                    <div class="feature-menu-item hover:underline hover:underline-offset-8 cursor-pointer text-[15px] mr-[15px!important]">Xbox</div>
-                    <div class="feature-menu-item hover:underline hover:underline-offset-8 cursor-pointer text-[15px]">Support</div>
+                    <div
+                        class="feature-menu-item hover:underline hover:underline-offset-8 cursor-pointer text-[15px] mr-[15px!important]">
+                        Microsoft 365</div>
+                    <div
+                        class="feature-menu-item hover:underline hover:underline-offset-8 cursor-pointer text-[15px] mr-[15px!important]">
+                        Office</div>
+                    <div
+                        class="feature-menu-item hover:underline hover:underline-offset-8 cursor-pointer text-[15px] mr-[15px!important]">
+                        Windows</div>
+                    <div
+                        class="feature-menu-item hover:underline hover:underline-offset-8 cursor-pointer text-[15px] mr-[15px!important]">
+                        Surface</div>
+                    <div
+                        class="feature-menu-item hover:underline hover:underline-offset-8 cursor-pointer text-[15px] mr-[15px!important]">
+                        Xbox</div>
+                    <div class="feature-menu-item hover:underline hover:underline-offset-8 cursor-pointer text-[15px]">
+                        Support</div>
                 </div>
             </div>
             <div class="cart text-center md:order-3 flex">
-                <div class="search hidden md:inline mr-6 mt-4 text-[15px]">All Microsoft</div>
+                <div class="search hidden md:inline mr-6 mt-4 text-[15px] cursor-pointer relative"
+                    onclick="hideShowAllMicrosoft()">All Microsoft <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    <div id="allMicrosoft" style="display: none;"
+                        class="absolute right-[-216px] w-[69rem] py-2 mt-[1.1rem] bg-[#e6e6e6] rounded-md shadow-xl">
+                        <ul class="w-full flex space-x-12 p-4 justify-start cursor-default text-sm">
+                            <li class="text-left"><span class="font-bold">Software</span>
+                                <ul class="w-full flex flex-col space-y-6 cursor-pointer">
+                                    <li></li>
+                                    <li class="text-left w-[11rem] hover:underline hover:underline-offset-4">Windows
+                                        Apps</li>
+                                    <li class="text-left w-[11rem] hover:underline hover:underline-offset-4">OneDrive
+                                    </li>
+                                    <li class="text-left w-[11rem] hover:underline hover:underline-offset-4">Outlook
+                                    </li>
+                                    <li class="text-left w-[11rem] hover:underline hover:underline-offset-4">Skype</li>
+                                    <li class="text-left w-[11rem] hover:underline hover:underline-offset-4">OneNote
+                                    </li>
+                                    <li class="text-left w-[11rem] hover:underline hover:underline-offset-4">Microsoft
+                                        Teams</li>
+                                </ul>
+                            </li>
+                            <li class="text-left"><span class="font-bold">PCs & Devices</span>
+                                <ul class="w-full flex flex-col space-y-6 cursor-pointer">
+                                    <li></li>
+                                    <li class="text-left w-[11rem] hover:underline hover:underline-offset-4">Shop Xbox
+                                    </li>
+                                    <li class="text-left w-[11rem] hover:underline hover:underline-offset-4">Accessories
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="text-left"><span class="font-bold">Entertainment</span>
+                                <ul class="w-full flex flex-col space-y-6 cursor-pointer">
+                                    <li></li>
+                                    <li class="text-left w-[11rem] hover:underline hover:underline-offset-4">Xbox Game
+                                        Pass Ultimate</li>
+                                    <li class="text-left w-[11rem] hover:underline hover:underline-offset-4">Xbox Live
+                                        Gold</li>
+                                    <li class="text-left w-[11rem] hover:underline hover:underline-offset-4">Xbox games
+                                    </li>
+                                    <li class="text-left w-[11rem] hover:underline hover:underline-offset-4">PC games
+                                    </li>
+                                    <li class="text-left w-[11rem] hover:underline hover:underline-offset-4">Windows
+                                        digital games</li>
+                                </ul>
+                            </li>
+                            <li class="text-left"><span class="font-bold">Business</span>
+                                <ul class="w-full flex flex-col space-y-6 cursor-pointer">
+                                    <li></li>
+                                    <li class="text-left w-[11rem] hover:underline hover:underline-offset-4">Microsoft
+                                        Cloud</li>
+                                    <li class="text-left w-[11rem] hover:underline hover:underline-offset-4">Microsoft
+                                        Security</li>
+                                    <li class="text-left w-[11rem] hover:underline hover:underline-offset-4">Azure</li>
+                                    <li class="text-left w-[11rem] hover:underline hover:underline-offset-4">Dynamics
+                                        365</li>
+                                    <li class="text-left w-[11rem] hover:underline hover:underline-offset-4">Microsoft
+                                        365 for business</li>
+                                    <li class="text-left w-[11rem] hover:underline hover:underline-offset-4">Microsoft
+                                        Industry</li>
+                                    <li class="text-left w-[11rem] hover:underline hover:underline-offset-4">Microsoft
+                                        Power Platform</li>
+                                    <li class="text-left w-[11rem] hover:underline hover:underline-offset-4">Windows 365
+                                    </li>
+                                    <li class="text-left w-[11rem] hover:underline hover:underline-offset-4">Microsoft
+                                        Teams</li>
+                                </ul>
+                            </li>
+                            <li class="text-left"><span class="font-bold">Developer & IT</span>
+                                <ul class="w-full flex flex-col space-y-6 cursor-pointer">
+                                    <li></li>
+                                    <li class="text-left w-[11rem] hover:underline hover:underline-offset-4">Developer
+                                        Center</li>
+                                    <li class="text-left w-[11rem] hover:underline hover:underline-offset-4">
+                                        Documentation</li>
+                                    <li class="text-left w-[11rem] hover:underline hover:underline-offset-4">Microsoft
+                                        Learn</li>
+                                    <li class="text-left w-[11rem] hover:underline hover:underline-offset-4">Microsoft
+                                        Tech Community</li>
+                                    <li class="text-left w-[11rem] hover:underline hover:underline-offset-4">Azure
+                                        Marketplace</li>
+                                    <li class="text-left w-[11rem] hover:underline hover:underline-offset-4">AppSource
+                                    </li>
+                                    <li class="text-left w-[11rem] hover:underline hover:underline-offset-4">Visual
+                                        Studio</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
                 <div class="mx-2 mt-4 text-[15px]">Search</div>
-                <img class="w-5 h-5 mr-6 mt-5" src="assets/search.svg">
+                <img class="w-5 h-5 mr-6 mt-5 cursor-pointer" src="assets/search.svg">
                 <div class="flex pt-1">
-                    <img class="w-8 h-8 mr-6 mt-2" src="assets/icons8-shopping-cart-32.png">
-                    <img class="w-8 h-8 mr-6 mt-2" src="assets/abstract-user-flat-1.png">
+                    <img class="w-8 h-8 mr-6 mt-2 cursor-pointer" src="assets/icons8-shopping-cart-32.png">
+                    <img class="w-8 h-8 mr-6 mt-2 cursor-pointer" src="assets/abstract-user-flat-1.png">
                 </div>
             </div>
         </div>
@@ -60,22 +174,45 @@
             </div>
         </div>
 
-        <div class="promo space-y-6 flex flex-col lg:flex-row justify-center">
+        <div class="promo space-y-6 flex flex-col lg:flex-row justify-center mb-16">
             <div class="item flex md:flex-col items-center mx-4 mt-6 space-x-2">
                 <img src="assets/gldn-Quick-Link-Icon-80x80-Microsoft-365.png" alt="" />
-                <span class="font-medium md:w-[8rem] md:text-sm my-4 text-center underline underline-offset-4 text-blue-800">Choose you Microsoft 365</span>
+                <span
+                    class="font-medium w-[11rem] md:text-sm my-4 text-center underline underline-offset-4 text-blue-800">Choose
+                    you Microsoft 365</span>
             </div>
             <div class="item flex md:flex-col items-center mx-4 space-x-2">
                 <img src="assets/icon-LL-surface-kickstand-120x120.png" alt="" />
-                <span class="font-medium md:w-[8rem] md:text-sm my-4 text-center underline underline-offset-4 text-blue-800">Explore Surface devices</span>
+                <span
+                    class="font-medium w-[11rem] md:text-sm my-4 text-center underline underline-offset-4 text-blue-800">Explore
+                    Surface devices</span>
             </div>
             <div class="item flex md:flex-col items-center mx-4 space-x-2">
                 <img src="assets/gldn-ICON-LL-xbox-logo-120x120.png" alt="" />
-                <span class="font-medium md:w-[8rem] md:text-sm my-4 text-center underline underline-offset-4 text-blue-800"> Buy Xbox games </span>
+                <span
+                    class="font-medium w-[11rem] md:text-sm my-4 text-center underline underline-offset-4 text-blue-800">
+                    Buy Xbox games </span>
             </div>
             <div class="item flex md:flex-col items-center mx-4 space-x-2">
                 <img src="assets/gldn-Quick-Link-Icon-80x80-Microsoft-365.png" alt="" />
-                <span class="font-medium md:w-[8rem] md:text-sm my-4 text-center underline underline-offset-4 text-blue-800">Get Windows 11</span>
+                <span
+                    class="font-medium w-[11rem] md:text-sm my-4 text-center underline underline-offset-4 text-blue-800">Get
+                    Windows 11</span>
+            </div>
+        </div>
+
+        <div class="new-item-container flex flex-row mx-auto w-[91%]">
+            <div>
+                <img src="assets/Content-Card-Surface-Laptop-Go-2-01-M01.webp" alt="" />
+            </div>
+            <div>
+                <img src="assets/Gldn-mscom-01-Black-Platinum-CP01.webp" alt="" />
+            </div>
+            <div>
+                <img src="assets/Content-Card-AEM-PC-Game-Pass-Expansion.webp" alt="" />
+            </div>
+            <div>
+                <img src="assets/gldn-CP-Windows11-GlobalLaunch.jpg" alt="" />
             </div>
         </div>
     </div>

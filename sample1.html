@@ -1,0 +1,37 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS Dropdowns Menu on Hover Example</title>
+    <script defer src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"></script>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<div class="container flex justify-center mx-auto mt-20">
+    <div x-data="{ open: false }" @mouseleave="open = false" class="relative">
+        <!-- Dropdown toggle button -->
+        <button @mouseover="open = true" class="flex items-center block p-2 bg-white bg-gray-100 rounded-md">
+            text
+        </button>
+
+        <!-- Dropdown menu -->
+        <div class="absolute right-0 w-48 py-2 mt-2 bg-gray-100 rounded-md shadow-xl">
+            <a href="#" class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white">
+                Dropdown List 1
+            </a>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white">
+                Dropdown List 2
+            </a>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white">
+                Dropdown List 3
+            </a>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white">
+                Dropdown List 4
+            </a>
+        </div>
+    </div>
+</div>
+
+</html>
